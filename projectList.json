@@ -5,7 +5,8 @@
         "image": "",
         "github": "https://github.com/MoskaDowlatzay/World-Recipes",
         "livelink": "https://moskadowlatzay.github.io/World-Recipes/",
-        "description": "Team project - API, Bootstrap, JS"
+        "description": "Team project - API, Bootstrap, JS",
+        "url": "/WorldRecipes"
     },
     {
         "id": 2,
@@ -13,15 +14,17 @@
         "image": "",
         "github": "https://github.com/hszilvi/weather-forecast-api",
         "livelink": "https://hszilvi.github.io/weather-forecast-api/",
-        "description": "API, Bootstrap, JS, jQuery"
+        "description": "API, Bootstrap, JS, jQuery",
+        "url": "/WeatherForecastAPI"
     },
     {
         "id": 3,
-        "name": "Boostrap Portfolio",
+        "name": "Bootstrap Portfolio",
         "image": "",
         "github": "https://github.com/hszilvi/bootstrap-portfolio",
         "livelink": "https://hszilvi.github.io/bootstrap-portfolio/",
-        "description": "Bootstrap, HTML, CSS"
+        "description": "Bootstrap, HTML, CSS",
+        "url": "/BootstrapPortfolio"
     },
     {
         "id": 4,
@@ -29,7 +32,8 @@
         "image": "",
         "github": "https://github.com/hszilvi/generate-team-profile",
         "livelink": "",
-        "description": "Bootstrap, HTML, JS, Node.js"
+        "description": "Bootstrap, HTML, JS, Node.js",
+        "url": "/TeamPorfileGenerator"
     },
     {
         "id": 5,
@@ -37,7 +41,8 @@
         "image": "",
         "github": "https://github.com/hszilvi/password-generator-js",
         "livelink": "https://peppy-centaur-3cd68d.netlify.app/",
-        "description": "JS"
+        "description": "JS",
+        "url": "/PasswordGenerator"
     },
     {
         "id": 6,
@@ -45,6 +50,7 @@
         "image": "",
         "github": "https://github.com/hszilvi/safarjudit",
         "livelink": "https://safarjudit.com/",
-        "description": "HTML, SCSS, JS"
+        "description": "HTML, SCSS, JS",
+        "url": "/PersonalWebsite"
     }
 ]

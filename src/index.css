@@ -66,3 +66,53 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 } */
+/* waving hand from  Jake Jarvis*/
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+@keyframes wave-animation {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }
+  20% { transform: rotate(-8.0deg) }
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate(10.0deg) }
+  60% { transform: rotate( 0.0deg) } 
+  100% { transform: rotate( 0.0deg) }
+
+}
+.hero-img {
+  max-width: 50em;
+  max-height: 40em;
+  /* width: 100vw; */
+  position: relative;
+  border: 2px solid green;
+}
+.portre {
+  border: 2px solid red;
+  border-radius: 50% 0 50% 50%;
+  max-width: 40em;
+  max-height: 40em;
+  /* width: 100%; */
+  /* height:; */
+  /* height: auto; */
+  overflow: hidden;
+  /* position: absolute;
+  right: 0; */
+
+}
+.portre-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-wrapper {
+  position: absolute;
+  top: 30px;
+  z-index: 10;
+  width: 10em;
+}

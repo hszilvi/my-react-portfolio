@@ -139,3 +139,16 @@ This challenge is assessed on the following criteria:
 
 progress bar
 https://react-bootstrap.netlify.app/docs/components/progress
+
+
+credits:
+waving emoji: https://jarv.is/notes/css-waving-hand-emoji/
+icons: https://icons8.com/icon/set/react/color
+
+pdf
+https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9
+https://pspdfkit.com/blog/2022/how-to-display-a-pdf-in-react/
+https://www.shecodes.io/athena/12109-how-to-upload-a-pdf-file-in-react
+
+router
+https://www.youtube.com/watch?v=XBRLVRjZ3CQ

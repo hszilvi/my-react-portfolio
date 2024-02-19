@@ -2,14 +2,15 @@
 import './App.css'
 import React from 'react'
 import NavTabs from './components/NavTabs/index.jsx'
-import HeroSection from './components/Home/index.jsx'
+import Hero from './components/Hero/index.jsx'
 import ProjectGallery from './components/ProjectGallery/index.jsx'
 import Contact from './components/Contact/index.jsx'
 import Footer from './components/Footer/index.jsx'
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import Resume from './components/Resume/index.jsx'
+import { Routes, Route } from 'react-router-dom';
 
 function App() {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   // const [currentPage, setCurrentPage] = useState('Home');
 
   // const handlePageChange = (page) => {
@@ -27,8 +28,10 @@ function App() {
     <>
     <NavTabs />
     <Routes>
-      <Route path="/" element={<HeroSection />} />
-      <Route path='/projects' element={<ProjectGallery />} />
+      <Route path='/' element={<Hero />} />
+      <Route path='/projectgallery' element={<ProjectGallery />} />
+      <Route path='/resume' element={<Resume />} />
+      {/* <Route path='/projects' element={} */}
       <Route path='/contact' element={<Contact />} />
     </Routes>
 
