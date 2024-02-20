@@ -23,7 +23,7 @@ Portfolio website using React to show my works/projects were created during my b
 
 ### Links
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)[https://github.com/hszilvi/my-react-portfolio]
-[live link]()
+[live link](https://genuine-cobbler-62f841.netlify.app/)
 
 ### My_process
 * created a wireframe using excalidraw 
