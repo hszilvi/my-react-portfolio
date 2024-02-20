@@ -152,3 +152,24 @@ https://www.shecodes.io/athena/12109-how-to-upload-a-pdf-file-in-react
 
 router
 https://www.youtube.com/watch?v=XBRLVRjZ3CQ
+
+https://blog.logrocket.com/how-create-multilevel-dropdown-menu-react/
+
+
+ <>
+    <Form onSubmit={handleSubmit(onSubmit)}>
+      <h4>If you are interested in working together, get in touch with me.</h4>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlInput1" value={formData.email} onChange={handleInputChange}>
+        <Form.Label>Email address</Form.Label>
+        <Form.Control type="email" placeholder="name@example.com" />
+      </Form.Group>
+      <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1" value={formData.message} onChange={handleInputChange}>
+        <Form.Label>Your message...</Form.Label>
+        
+        <Form.Control as="textarea" rows={3} />
+      </Form.Group>
+      <Button >Send message</Button>
+      <ErrorMessage message="Please enter valid email and text message." />
+    </Form>
+    </>
+  );

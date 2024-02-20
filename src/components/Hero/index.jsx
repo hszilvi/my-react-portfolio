@@ -3,9 +3,10 @@ const Hero = () => {
     return (
         <>
             <div className='d-flex flex-column flex-md-row flex-lg-row mt-3'>
-                <div className='p-5 text-left'>
-                    <h1 className='mt-5 mb-3'>Hi, I&apos;m Szilvia,</h1>
-                    <h4 className='mb-3'>Junior front-end developer</h4>
+                <div className='p-5 text-left text-content'>
+                    <h1 className='mt-5 mb-3 text-left'>Hi, I&apos;m Szilvia,</h1>
+                    <h4 className='mb-3 fw-bold h3 text-left'>Junior front-end developer</h4>
+                    <p className='mt-5 h4'>With over 20 years of experience in marketing, I can see through the eyes of the customer. </p>
                     {/* <h4 className='mb-3'>Junior front-end developer</h4> */}
                     {/* <a className='btn btn-primary' href='' role='button'>
                     Call to action

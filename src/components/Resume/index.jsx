@@ -1,7 +1,7 @@
 import React from 'react';
 import { Document, Page } from "react-pdf";
 
-import pdfFile from '../../../public/resume.pdf';
+import pdfFile from '../../assets/resume.pdf';
 
 const Resume = () => {
     console.log(pdfFile);

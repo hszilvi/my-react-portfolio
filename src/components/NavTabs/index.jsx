@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import projectList from '../../../projectList.json';
 import DropDownProject from '../DropDownProject';
+import ProjectSite from '../ProjectSite';
 
 const NavTabs = () => {
     return (
@@ -14,17 +15,19 @@ const NavTabs = () => {
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="/">Home</Nav.Link>
-                        <Nav.Link href="/projectgallery">Project Gallery</Nav.Link>
-                        <Nav.Link href="/resume">Resume</Nav.Link>
+                        <Nav.Link className="nav-element" href="/">Home</Nav.Link>
+                        <Nav.Link className="nav-element" href="/projectgallery">Project Gallery</Nav.Link>
+                        <Nav.Link className="nav-element" href="/resume">Resume</Nav.Link>
                         {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
-                        <NavDropdown title="Projects" id="collapsible-nav-dropdown">
+                        <NavDropdown className="nav-element" title="Projects" id="collapsible-nav-dropdown">
                                 {projectList.map((project) => {
                                     return (
                                         <DropDownProject 
                                         id={project.id}
                                         key={project.id}
-                                        name={project.name} />
+                                        name={project.name}
+                                        url={project.url} 
+                                        />
 
                                     )
                                 })}
@@ -42,7 +45,7 @@ const NavTabs = () => {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="/contact">Contact</Nav.Link>
+                        <Nav.Link className="nav-element" href="/contact">Contact</Nav.Link>
                         {/* <Nav.Link eventKey={2} href="#memes">
                         Dank memes
                         </Nav.Link> */}
