@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import projectList from '../../../projectList.json';
 import DropDownProject from '../DropDownProject';
-import ProjectSite from '../ProjectSite';
+import { Link } from 'react-router-dom'
 
 const NavTabs = () => {
     return (
@@ -17,38 +17,25 @@ const NavTabs = () => {
                     <Nav className="me-auto">
                         <Nav.Link className="nav-element" href="/">Home</Nav.Link>
                         <Nav.Link className="nav-element" href="/projectgallery">Project Gallery</Nav.Link>
-                        <Nav.Link className="nav-element" href="/resume">Resume</Nav.Link>
-                        {/* <Nav.Link href="/contact">Contact</Nav.Link> */}
+                        <Nav.Link className="nav-element" href="https://1drv.ms/b/s!AjxelnH1mDmzlOwxM7rNjd1ZdZ0SHw?e=nFgb90" target='_blank'>Resume</Nav.Link>
                         <NavDropdown className="nav-element" title="Projects" id="collapsible-nav-dropdown">
                                 {projectList.map((project) => {
                                     return (
-                                        <DropDownProject 
-                                        id={project.id}
-                                        key={project.id}
-                                        name={project.name}
-                                        url={project.url} 
-                                        />
+                                        <Link to={project.url} className='dropdown-element'>
+                                            <DropDownProject 
+                                            key={project.id}
+                                            id={project.id}
+                                            name={project.name}
+                                            url={project.url} 
+                                            />
+                                        </Link>
 
                                     )
                                 })}
-
-                        {/* <NavDropdown.Item href="#action/3.1">World Recipe</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Weather Forecast API</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Bootstrap Portfolio</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Team Profile Generator</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Password Generator</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Personal Website</NavDropdown.Item> */}
-                        {/* <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">
-                            Separated link
-                        </NavDropdown.Item> */}
                         </NavDropdown>
                     </Nav>
                     <Nav>
                         <Nav.Link className="nav-element" href="/contact">Contact</Nav.Link>
-                        {/* <Nav.Link eventKey={2} href="#memes">
-                        Dank memes
-                        </Nav.Link> */}
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

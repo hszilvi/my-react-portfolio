@@ -144,18 +144,20 @@ https://react-bootstrap.netlify.app/docs/components/progress
 credits:
 waving emoji: https://jarv.is/notes/css-waving-hand-emoji/
 icons: https://icons8.com/icon/set/react/color
+https://github.com/nnarhinen/react-pdf
 
 pdf
 https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9
 https://pspdfkit.com/blog/2022/how-to-display-a-pdf-in-react/
 https://www.shecodes.io/athena/12109-how-to-upload-a-pdf-file-in-react
 
+
 router
 https://www.youtube.com/watch?v=XBRLVRjZ3CQ
 
 https://blog.logrocket.com/how-create-multilevel-dropdown-menu-react/
 
-
+https://dev.to/cooljasonmelton/build-this-cool-dropdown-menu-with-react-react-router-and-css-39ln
  <>
     <Form onSubmit={handleSubmit(onSubmit)}>
       <h4>If you are interested in working together, get in touch with me.</h4>
@@ -173,3 +175,91 @@ https://blog.logrocket.com/how-create-multilevel-dropdown-menu-react/
     </Form>
     </>
   );
+
+                      {/* {responseMessage && <p className='text-danger fw-bolder'>{responseMessage}</p>} */}
+
+
+
+
+
+                      import Form from 'react-bootstrap/Form';
+// import Button from 'react-bootstrap/Button';
+import React, { useState } from 'react';
+import axios from 'axios';
+
+const Contact = () => {
+    const [formData, setFormData] = useState( {
+        email: '',
+        textMessage: ''
+    });
+    const [errors, setErrors] = useState({});
+    // const [responseMessage, setResponseMessage] = useState('');
+    const handleInputChange = (e) => {
+        const {name, value} = e.target;
+        setFormData( {
+            ...formData,
+            [name]: value,
+        })
+    };
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const validationErrors = validateForm(formData);
+        if (validationErrors) {
+            setErrors(validationErrors);
+            return;
+        }
+        // try {
+        //     const response = await axios.post('/api/submit', formData);
+        //     setResponseMessage(response.data.textMessage);
+        // } catch (error) {
+        //     setResponseMessage('Please enter valid email and text message.')
+        // }
+
+    };
+    const validateForm = (data) => {
+        console.log(data)
+        const errors = {};
+        if (!data.email || !isValidEmail(data.email)) {
+            
+            errors.email = 'Please enter a valid email address';
+            console.log(errors.email)
+            console.log(errors)
+        } else if (!data.textMessage) {
+            errors.textMessage = 'Please fill the message field.';
+            console.log(errors.textMessage)
+        } else {
+            return errors;
+
+        }
+    };
+    const isValidEmail = (email) => {
+        const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        console.log(emailRegex.test(email))
+        return emailRegex.test(email);
+
+    }
+
+    return (
+        <>
+        <div className='contact-wrapper mt-5 mb-5 border rounded'>
+            <h4 className="h4 mt-5 mb-5">If you are interested in working together, get in touch with me.</h4>
+            <Form onSubmit={handleSubmit}>
+                <Form.Group className='mb-3'>
+                    <input className='form-label border-success rounded' type='text' name='email' placeholder='email@example.com' value={formData.email} onChange={handleInputChange}></input>{errors.email && <p>{errors.email}</p>}
+                </Form.Group>
+                <Form.Group className='mb-3'>
+                    <textarea className='form-label border-success rounded' name='textMessage' type='text' placeholder='type your message here' value={formData.textMessage} onChange={handleInputChange}></textarea>{errors.textMessage && <p className='text-danger'>{errors.textMessage}</p>}
+                </Form.Group>
+                    <button className='btn btn-outline-success mb-5' type='submit'>Send</button>
+
+                
+            </Form>
+        </div>
+        </>
+    )
+
+
+
+ };
+
+export default Contact; 

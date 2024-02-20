@@ -1,23 +1,20 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-const ProjectSite = (props) => {
+const ProjectSite = ({props}) => {
     return (
     <>
-          <Card>
-        <Card.Img variant="top" src="holder.js/100px180" />
+      <Card>
+        <h2 className='fw-bold mb-5 h1'>{props.name}</h2>
+        <Card.Img variant="top" src={props.image} alt={props.image} className='border shadow'/>
         <Card.Body>
           <Card.Text>
-            <h2>{props.name}</h2>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
-            <h3>Built with: {props.description}</h3>
+            <p className='fw-normal mb-5 text-left'>{props.description}</p>
+            <p><span className='fw-bold mt-5 mb-5 me-2'>Built with:</span> {props.build}</p>
           </Card.Text>
-          <Button variant="dark">Github</Button>
-          <Button variant="danger">Livelink</Button>
+          <Button className='mt-5' variant="dark" href={props.github} target='_blank'>Github</Button>
         </Card.Body>
       </Card>
-
     </>
     )
 }

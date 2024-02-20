@@ -2,55 +2,62 @@
     {
         "id": 1,
         "name": "World-Recipes",
-        "image": "",
+        "image": "./src/assets/images/world-recipe.png",
         "github": "https://github.com/MoskaDowlatzay/World-Recipes",
         "livelink": "https://moskadowlatzay.github.io/World-Recipes/",
-        "description": "Team project - API, Bootstrap, JS",
+        "build": "JavaScript, jQuery, dayjs, Bootstrap, MealDB API, gnews.io",
+        "description": "A website where user can find recipes from all over the world and check out some food related news as an extra. User story: As a user, I want to find recipes local to a specific country. I will click on a country name and relevant recipes will appear. Countries I click will be saved to my search history, so I can access them again. If I scroll further down the webpage, articles related to food and recipes will be displayed on cards, which I can click on to read the full article.",
+
         "url": "/world-recipes"
     },
     {
         "id": 2,
         "name": "Weather Forecast API",
-        "image": "",
+        "image": "./src/assets/images/weather-forecast-api.png",
         "github": "https://github.com/hszilvi/weather-forecast-api",
         "livelink": "https://hszilvi.github.io/weather-forecast-api/",
-        "description": "API, Bootstrap, JS, jQuery",
+        "build": "API, Bootstrap, JavaScript, jQuery, dayjs",
+        "description": "Create a weather dashboard with form inputs. When a user searches for a city they are presented with current and future conditions for that city and that city is added to the search history When a user views the current weather conditions for that city they are presented with data (date, city name, temperature, etc. When a user click on a city in the search history they are again presented with current and future conditions for that city I finished the challenge using jQuery and events around local storage.",
         "url": "/weather-forecast-API"
     },
     {
         "id": 3,
         "name": "Bootstrap Portfolio",
-        "image": "",
+        "image": "./src/assets/images/bootstrap-portfolio-view.jpg",
         "github": "https://github.com/hszilvi/bootstrap-portfolio",
         "livelink": "https://hszilvi.github.io/bootstrap-portfolio/",
-        "description": "Bootstrap, HTML, CSS",
+        "build": "Bootstrap, HTML, CSS",
+        "description": "Recreate a given layout by using only in-built-styles. Bootstrap.",
         "url": "/bootstrap-portfolio"
     },
     {
         "id": 4,
         "name": "Team Profile Generator",
-        "image": "",
+        "image": "./src/assets/images/team-generator.png",
         "github": "https://github.com/hszilvi/generate-team-profile",
-        "livelink": "",
-        "description": "Bootstrap, HTML, JS, Node.js",
+        "livelink": "https://github.com/hszilvi/generate-team-profile",
+        "build": "Bootstrap, HTML, JavaScript, Node.js",
+        "description": "The task is to take the given starter code and convert it into a working Node.js command-line application. This application will take in information about employees on a software engineering team, then generates an HTML webpage that displays summaries for each person.",
         "url": "/team-porfile-generator"
     },
     {
         "id": 5,
         "name": "Password Generator",
-        "image": "",
+        "image": "./src/assets/images/password-generator.png",
         "github": "https://github.com/hszilvi/password-generator-js",
         "livelink": "https://peppy-centaur-3cd68d.netlify.app/",
-        "description": "JS",
+        "build": "JavaScript",
+        "description": "Password generator app features dynamically updated HTML and CSS, and all powered by JavaScript code. User can generate a password with required special characters and length.",
         "url": "/password-generator"
     },
     {
         "id": 6,
         "name": "Personal Website",
-        "image": "",
+        "image": "./src/assets/images/personal-website.png",
         "github": "https://github.com/hszilvi/safarjudit",
         "livelink": "https://safarjudit.com/",
-        "description": "HTML, SCSS, JS",
+        "build": "HTML, SCSS, JavaScript",
+        "description": "This is a simple personal website. The site was created from scratch using HTML, JavasCript and CSS only.",
         "url": "/personal-website"
     }
 ]
