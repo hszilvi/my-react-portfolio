@@ -42,7 +42,7 @@ const Hero = () => {
                         </div>
                     </div>
                     <div className='portre text-align-right'>
-                        <img src="/src/assets/HSz.JPG" alt='Szilvia Horvath' className="portre-pic"></img>
+                        <img src="../../assets/HSz.JPG" alt='Szilvia Horvath' className="portre-pic"></img>
                     </div>
                 </div>
             </div>    
