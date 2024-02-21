@@ -1,4 +1,4 @@
-import projectData from '../projectList.json';
+import projectData from './projectList.json';
 import './App.css'
 import React from 'react'
 import NavTabs from './components/NavTabs/index.jsx'
