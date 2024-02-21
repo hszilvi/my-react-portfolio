@@ -1,5 +1,5 @@
 import ProjectCard from "../ProjectCard";
-import projectList from '../../../projectList.json'
+import projectList from '../../projectList.json'
 
 const ProjectGallery = () => {
   return (

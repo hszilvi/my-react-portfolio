@@ -1,5 +1,4 @@
 import Nav from 'react-bootstrap/Nav';
-// import { SocialIcon } from 'react-social-icons'
 
 function Footer() {
   return (
