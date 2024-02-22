@@ -35,7 +35,7 @@ const NavTabs = () => {
                         </NavDropdown>
                     </Nav>
                     <Nav>
-                        <Nav.Link className="nav-element" href="/contact">Contact</Nav.Link>
+                        <Nav.Link className="nav-element" href="something">Contact</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

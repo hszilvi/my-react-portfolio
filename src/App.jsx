@@ -25,6 +25,7 @@ function App() {
         <Route path='/personal-website' element={<ProjectSite props={projectData[5]} />} />
         
         <Route path='/contact' element={<Contact />} />
+        <Route path='something' element={<Contact />} />
       </Routes>
       <Footer />
     </>

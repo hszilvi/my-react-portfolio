@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "World-Recipes",
-        "image": "./src/assets/images/world-recipe.png",
+        "image": "../public/world-recipe.png",
         "github": "https://github.com/MoskaDowlatzay/World-Recipes",
         "livelink": "https://moskadowlatzay.github.io/World-Recipes/",
         "build": "JavaScript, jQuery, dayjs, Bootstrap, MealDB API, gnews.io",
@@ -13,7 +13,7 @@
     {
         "id": 2,
         "name": "Weather Forecast API",
-        "image": "./src/assets/images/weather-forecast-api.png",
+        "image": "../public/weather-forecast-api.png",
         "github": "https://github.com/hszilvi/weather-forecast-api",
         "livelink": "https://hszilvi.github.io/weather-forecast-api/",
         "build": "API, Bootstrap, JavaScript, jQuery, dayjs",
@@ -23,7 +23,7 @@
     {
         "id": 3,
         "name": "Bootstrap Portfolio",
-        "image": "./src/assets/images/bootstrap-portfolio-view.jpg",
+        "image": "../public/bootstrap-portfolio-view.jpg",
         "github": "https://github.com/hszilvi/bootstrap-portfolio",
         "livelink": "https://hszilvi.github.io/bootstrap-portfolio/",
         "build": "Bootstrap, HTML, CSS",
@@ -33,7 +33,7 @@
     {
         "id": 4,
         "name": "Team Profile Generator",
-        "image": "./src/assets/images/team-generator.png",
+        "image": "../public/team-generator.png",
         "github": "https://github.com/hszilvi/generate-team-profile",
         "livelink": "https://github.com/hszilvi/generate-team-profile",
         "build": "Bootstrap, HTML, JavaScript, Node.js",
@@ -43,7 +43,7 @@
     {
         "id": 5,
         "name": "Password Generator",
-        "image": "./src/assets/images/password-generator.png",
+        "image": "../public/password-generator.png",
         "github": "https://github.com/hszilvi/password-generator-js",
         "livelink": "https://peppy-centaur-3cd68d.netlify.app/",
         "build": "JavaScript",
@@ -53,7 +53,7 @@
     {
         "id": 6,
         "name": "Personal Website",
-        "image": "./assets/images/personal-website.png",
+        "image": "../public/personal-website.png",
         "github": "https://github.com/hszilvi/safarjudit",
         "livelink": "https://safarjudit.com/",
         "build": "HTML, SCSS, JavaScript",
